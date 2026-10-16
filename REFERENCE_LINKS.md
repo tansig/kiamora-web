@@ -25,13 +25,16 @@ Use current official documentation when commands or platform behaviour have chan
 
 ## Cloudflare
 
-- Astro on Workers: https://developers.cloudflare.com/workers/framework-guides/web-apps/astro/
+- Angular on Workers: https://developers.cloudflare.com/workers/framework-guides/web-apps/more-web-frameworks/angular/
 - Workers limits: https://developers.cloudflare.com/workers/platform/limits/
 - Custom domains: https://developers.cloudflare.com/workers/configuration/routing/custom-domains/
 
-## Astro
+## Angular
 
-- Documentation: https://docs.astro.build/
-- Cloudflare adapter: https://docs.astro.build/en/guides/integrations-guide/cloudflare/
+- Documentation: https://angular.dev/
+- Releases: https://angular.dev/reference/releases
+- Installation: https://angular.dev/installation
+- Hybrid rendering: https://angular.dev/guide/hybrid-rendering
+- Angular on Cloudflare Workers: https://developers.cloudflare.com/workers/framework-guides/web-apps/more-web-frameworks/angular/
 
 Re-check official documentation before acting on pricing, quotas, CLI flags or authentication settings.

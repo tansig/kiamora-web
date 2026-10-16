@@ -8,10 +8,11 @@ Claude must update this document with the exact implemented commands and project
 2. Run the full validation suite.
 3. Review Supabase migration diff.
 4. Apply migrations to the linked project.
-5. Set Cloudflare environment variables through the dashboard/CLI; never commit them.
-6. Deploy to a `*.workers.dev` preview URL.
-7. Add the preview Auth callback URL in Supabase.
-8. Run public, admin and security smoke tests.
+5. Build Angular browser/server output and verify the generated Cloudflare Worker configuration.
+6. Set Cloudflare environment variables through the dashboard/CLI; never commit them.
+7. Deploy to a `*.workers.dev` preview URL.
+8. Add the preview Auth callback URL in Supabase.
+9. Run public, admin and security smoke tests.
 
 Expected commands after implementation:
 

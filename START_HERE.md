@@ -8,7 +8,7 @@ This pack is the source of truth for building Kiamora on a clean personal Window
 - Secure `/admin` portal.
 - Admin-managed products, categories, images, homepage content and business settings.
 - Supabase PostgreSQL, Auth and Storage.
-- Astro SSR with React admin components.
+- Angular 22.x using standalone components and hybrid rendering.
 - Cloudflare Workers deployment.
 - WhatsApp as the primary customer-conversion channel.
 - No company code, company configuration or company-owned AI skills.
@@ -41,7 +41,7 @@ This pack is the source of truth for building Kiamora on a clean personal Window
 
 ### CLAUDE performs in the repository
 
-- Initialise and implement the application.
+- Initialise and implement the Angular application.
 - Create version-controlled Supabase migrations.
 - Create and test RLS policies.
 - Implement public pages and admin portal.

@@ -21,6 +21,7 @@
 - `ADMIN_REQUIREMENTS.md`
 - `DATABASE_DESIGN.md`
 - `SECURITY.md`
+- `UI_SPECS.md`
 - `ENVIRONMENT_VARIABLES.md`
 - `DEPLOYMENT_GUIDE.md`
 - `.env.example`
@@ -31,6 +32,14 @@
 - `README.md`
 - `ADMIN_GUIDE.md` — implementation placeholder Claude must complete
 - `assets/placeholders/README.md`
+
+## Professional GUI mockups
+
+- `mockups/storefront-product-colour-selection.svg/png`
+- `mockups/admin-dashboard.svg/png`
+- `mockups/admin-product-colour-images.svg/png`
+- `mockups/admin-users.svg/png`
+- `mockups/README.md`
 
 ## Ready-to-paste prompts
 

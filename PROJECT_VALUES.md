@@ -12,6 +12,8 @@ Supabase region: [TO FILL]
 Cloudflare Worker project name: kiamora-website
 Cloudflare preview URL: [TO FILL AFTER DEPLOYMENT]
 
+Angular major version: 22
+
 Production domain: [TO FILL]
 Public WhatsApp number: [TO FILL]
 Public enquiry email: [TO FILL]

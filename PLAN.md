@@ -15,8 +15,9 @@ Gate: every item in Step 0.11 is checked.
 
 ## Milestone 1 — Application foundation
 
-- Initialise Astro + TypeScript in the existing repository without deleting seed documents.
-- Add Cloudflare adapter and React integration.
+- Initialise the latest stable Angular 22.x application in the existing repository without deleting seed documents.
+- Use standalone components, strict TypeScript, SCSS, routing, Signals and Angular hybrid rendering.
+- Add Angular Material 3/CDK for admin primitives without applying a generic Material look to the storefront.
 - Add lint, formatting, typecheck, unit-test and browser-test scripts.
 - Create base layouts, routing, error handling and design tokens.
 - Create a minimal public homepage and admin login shell.
@@ -37,6 +38,7 @@ npm run build
 - Initialise Supabase local structure.
 - Add versioned migrations for all MVP tables and constraints.
 - Add public and admin RLS policies.
+- Add protected server-side administrator invitation and role-management functions with authorisation tests.
 - Add storage buckets/policies through migrations where supported.
 - Add safe seed data.
 - Implement Supabase browser/server clients and session middleware.
@@ -68,8 +70,10 @@ Gate: only published/active records are public; core journey passes at 390px, 76
 - Category CRUD.
 - Multiple category assignment.
 - Image upload/reorder/primary/alt text/delete safeguards.
+- Yellow/White/Rose Gold variants with independent multi-image galleries and storefront preview.
 - Homepage/page content editor.
 - Business settings editor.
+- Super-admin user-management page for multiple administrators.
 - Preview and storefront shortcuts.
 - Accessible validation, loading and error states.
 

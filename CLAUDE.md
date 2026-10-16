@@ -9,6 +9,7 @@ Read these files before changing code:
 5. `DATABASE_DESIGN.md`
 6. `SECURITY.md`
 7. `CONTENT_PENDING.md`
+8. `UI_SPECS.md`
 
 ## Operating rules
 
@@ -33,14 +34,16 @@ Read these files before changing code:
 
 ## Required stack
 
-- Astro with TypeScript and Cloudflare adapter
-- React for interactive admin components
+- Latest stable Angular 22.x patch at project creation
+- Angular standalone components, strict TypeScript and Signals
+- Angular hybrid rendering: SSR for public catalogue/product routes, CSR for protected admin interactions, and prerendering for suitable static pages
+- Angular Material 3 and Angular CDK for accessible admin primitives; custom Kiamora styling for storefront
 - Supabase PostgreSQL, Auth and Storage
-- `@supabase/supabase-js` and the supported SSR/session approach
+- `@supabase/supabase-js` with an SSR-safe session approach
 - Zod or equivalent typed validation
-- Vitest for unit tests
+- Angular's current Vitest-based unit testing
 - Playwright for critical browser journeys
-- CSS variables/components or another documented maintainable styling approach
+- SCSS/CSS design tokens matching `UI_SPECS.md`
 
 ## Definition of done
 

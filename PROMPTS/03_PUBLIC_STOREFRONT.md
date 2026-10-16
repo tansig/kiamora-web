@@ -7,10 +7,11 @@ Implement Milestone 3 only against the approved database contract.
 Build the full public Kiamora storefront with database-backed published content,
 SEO-friendly server rendering, responsive navigation, homepage, collections,
 catalogue/search/filter, product details, related products, bespoke enquiry,
-WhatsApp messages, editorial pages, legal placeholders, metadata, sitemap,
+Yellow/White/Rose Gold selectors that change the product gallery, WhatsApp messages,
+editorial pages, legal placeholders, metadata, sitemap,
 robots and structured data.
 
-Visual direction: deep green, ivory and restrained gold; premium editorial
+Follow UI_SPECS.md and `mockups/storefront-product-colour-selection.*`. Visual direction: deep green, ivory and restrained gold; premium editorial
 jewellery styling; generous whitespace; diamond-present emblem when the approved
 asset is supplied. Do not fabricate real products or customer claims.
 

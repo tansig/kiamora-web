@@ -52,6 +52,7 @@ reflect your selected stones, metal, size and personalisation.
 - `/admin/homepage`
 - `/admin/pages`
 - `/admin/settings`
+- `/admin/users`
 - `/admin/profile`
 
 All admin routes except login and auth callback require an authenticated, active administrator.
@@ -98,9 +99,11 @@ Default direction: deep green, ivory and restrained gold; elegant serif display 
 - Invite-only login/logout/reset password.
 - Dashboard summary.
 - Product create, edit, duplicate, preview, publish, unpublish, archive and restore.
+- Super-admin user management: invite multiple administrators, assign roles, activate/deactivate, resend invitations and inspect status.
 - Category create/edit/activate/deactivate/reorder.
 - Multiple product-category assignments.
 - Image upload, alt text, primary selection, reorder and safe deletion.
+- Yellow Gold, White Gold and Rose Gold variants, each with its own multi-image gallery.
 - Featured products/categories and sort order.
 - Homepage and selected editorial content editing.
 - Business/contact/default SEO settings.
@@ -110,9 +113,11 @@ Detailed behaviour is in `ADMIN_REQUIREMENTS.md`.
 
 ## 9. Architecture
 
-- Astro SSR + TypeScript.
-- React for interactive admin components.
-- Cloudflare adapter and Cloudflare Workers.
+- Latest stable Angular 22.x patch with strict TypeScript.
+- Standalone components, Signals and route-level lazy loading.
+- Angular hybrid rendering: SSR for dynamic public product/category routes, prerendering for suitable static pages and CSR for protected admin interactions.
+- Angular Material 3/CDK primitives for the admin portal with custom Kiamora styling.
+- Cloudflare Workers deployment.
 - Supabase PostgreSQL, Auth and Storage.
 - Version-controlled SQL migrations.
 - RLS on every exposed table.
@@ -128,6 +133,16 @@ Products use:
 - `archived`
 
 Only `published` products are visible publicly. Categories require `is_active = true` to be public.
+
+## 10.1 Gold-colour product experience
+
+- Products may offer Yellow Gold, White Gold and Rose Gold independently.
+- Each enabled colour has a label, accessible swatch, availability flag, sort order and multiple images.
+- One enabled colour is the default.
+- Selecting a colour on the storefront immediately changes the gallery and selected configuration.
+- Colour selection never relies on colour alone; visible text and selected state are mandatory.
+- The selected colour is included in the WhatsApp enquiry.
+- If a colour has no dedicated images, use the documented shared-image fallback.
 
 ## 11. SEO and quality
 

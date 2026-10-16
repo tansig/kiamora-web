@@ -4,12 +4,13 @@
 Read CLAUDE.md, PLAN.md and the latest STATUS.md. Implement Milestone 1 only.
 
 Requirements:
-- Initialise Astro + TypeScript in this existing repository without deleting seed documents.
-- Configure the Cloudflare adapter and React integration.
+- Initialise the latest stable Angular 22.x patch in this existing repository without deleting seed documents.
+- Use standalone components, routing, strict TypeScript, SCSS, Signals and hybrid rendering.
+- Configure Angular Material 3/CDK for admin primitives and Cloudflare Workers deployment.
 - Add environment validation without exposing secrets.
 - Create npm scripts for dev, typecheck, lint, formatting, unit tests, e2e tests,
   build and preview.
-- Create the design-token foundation and minimal accessible public/admin shells.
+- Implement the design-token foundation and minimal accessible public/admin shells from UI_SPECS.md and mockups/.
 - Add a useful error boundary/error page.
 - Keep placeholders obvious and non-deceptive.
 

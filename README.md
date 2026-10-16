@@ -6,7 +6,7 @@ This repository will contain Kiamora's public bespoke-jewellery storefront and s
 
 ```text
 Browser
-  -> Cloudflare Workers / Astro SSR
+  -> Cloudflare Workers / Angular hybrid rendering
        -> Supabase Auth
        -> Supabase PostgreSQL
        -> Supabase Storage
@@ -22,6 +22,8 @@ Browser
 - `SPEC.md` — functional and technical scope.
 - `PLAN.md` — implementation milestones and gates.
 - `ADMIN_REQUIREMENTS.md` — portal screens and behaviour.
+- `UI_SPECS.md` — storefront/admin visual and interaction specification.
+- `mockups/` — professional storefront and admin screen references.
 - `DATABASE_DESIGN.md` — schema and data rules.
 - `SECURITY.md` — authentication, RLS, storage and security tests.
 - `ENVIRONMENT_VARIABLES.md` — local and deployment configuration.

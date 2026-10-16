@@ -20,10 +20,27 @@ Claude must implement this design through timestamped Supabase migrations. Do no
 | `full_name` | Required |
 | `role` | `super_admin` or `content_admin` |
 | `is_active` | Defaults false until approved |
+| `invitation_status` | `pending`, `accepted`, `expired` or `revoked` as needed |
 | `created_at` | Timestamp |
 | `updated_at` | Timestamp |
 
 Do not expose email from Auth through a public table.
+
+## `admin_invitations`
+
+| Column | Notes |
+|---|---|
+| `id` | UUID PK |
+| `email_normalized` | Lowercase; visible only to super admins |
+| `full_name` | Intended administrator name |
+| `role` | Requested role |
+| `status` | `pending`, `accepted`, `expired`, `revoked` |
+| `invited_by` | Super-admin UUID |
+| `auth_user_id` | Nullable until accepted |
+| `expires_at` | Timestamp |
+| audit columns | created/updated timestamps |
+
+Do not store invitation tokens. Supabase Auth owns the actual invitation secret.
 
 ## `categories`
 
@@ -61,7 +78,6 @@ Do not expose email from Auth through a public table.
 | `is_featured` | Default false |
 | `is_new_arrival` | Default false |
 | `materials` | JSONB string array |
-| `gold_colours` | JSONB string array |
 | `stone_details` | JSONB structured data or text per final design |
 | `configuration_details` | JSONB |
 | `customisation_details` | Text |
@@ -76,6 +92,24 @@ Do not expose email from Auth through a public table.
 
 Store money as integer minor units, never floating point.
 
+## `product_colour_variants`
+
+| Column | Notes |
+|---|---|
+| `id` | UUID PK |
+| `product_id` | FK |
+| `gold_colour` | `yellow_gold`, `white_gold`, `rose_gold` |
+| `display_label` | Customer-visible label |
+| `swatch_hex` | Validated visual token; never the only indicator |
+| `is_default` | Exactly one enabled default per publishable product |
+| `is_active` | Availability flag |
+| `price_override_minor` | Optional colour-specific displayed price |
+| `configuration_details` | JSONB/text for colour-specific information |
+| `sort_order` | Non-negative integer |
+| audit columns | created/updated/by |
+
+Unique: `product_id`, `gold_colour`. Enforce at most one default using a partial unique index; publication validation enforces exactly one.
+
 ## `product_categories`
 
 - Composite PK: `product_id`, `category_id`.
@@ -88,6 +122,7 @@ Store money as integer minor units, never floating point.
 |---|---|
 | `id` | UUID PK |
 | `product_id` | FK |
+| `colour_variant_id` | Nullable FK; null means shared/general image |
 | `storage_path` | Required and unique |
 | `alt_text` | Required before product publication |
 | `is_primary` | Only one primary image per product |
@@ -95,7 +130,9 @@ Store money as integer minor units, never floating point.
 | `created_at` | Timestamp |
 | `created_by` | Admin UUID |
 
-Enforce one primary image per product with a partial unique index if supported.
+Enforce one primary image per colour variant and one shared primary image per product with partial unique indexes where supported.
+
+Storefront image fallback order: selected variant primary → shared primary → first selected-variant image → first shared image → branded placeholder.
 
 ## `site_settings`
 

@@ -17,5 +17,8 @@ Required sections:
 11. Troubleshoot validation errors
 12. Request technical support
 13. Security rules and prohibited actions
+14. Invite and manage administrators (super admin only)
+15. Configure Yellow/White/Rose Gold variants
+16. Upload and order multiple images for each colour
 
 The final guide must use business language, not implementation jargon.

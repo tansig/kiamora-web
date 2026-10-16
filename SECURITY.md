@@ -21,6 +21,9 @@ The browser and all public visitors are untrusted. Hiding buttons or routes is n
 13. Use secure, HTTP-only session cookies through the supported SSR approach.
 14. Avoid raw HTML from the admin editor; sanitise any rich text.
 15. Add security headers: CSP where practical, HSTS on production, frame protection, referrer policy and content-type protection.
+16. Only `super_admin` may list, invite, activate/deactivate or change roles for administrators.
+17. Auth Admin API operations must run in a protected server-side or Edge Function and must re-check the caller's JWT and active super-admin role.
+18. Prevent removal or demotion of the last active super admin.
 
 ## Storage policy
 
@@ -48,6 +51,9 @@ Automate or document tests for:
 | Active admin | Storage CRUD | Allow |
 | Content admin | Super-admin-only operation | Deny |
 | Super admin | Approved privileged action | Allow |
+| Content admin | Invite/change administrator | Deny |
+| Super admin | Invite administrator through protected function | Allow |
+| Last super admin | Deactivate/demote self | Deny |
 
 ## Manual security review before production
 

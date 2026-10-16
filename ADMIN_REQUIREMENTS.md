@@ -53,6 +53,17 @@ Optional/configurable fields:
 - SEO title/description
 - Custom WhatsApp message
 
+### Gold-colour variants and images
+
+- Enable any combination of Yellow Gold, White Gold and Rose Gold.
+- Require one enabled default colour before publication.
+- Display a dedicated editor tab for each enabled colour.
+- Allow multiple images per colour, drag/reorder, primary-image selection and alt text.
+- Show upload progress and per-file errors.
+- Support shared/general images only when explicitly marked.
+- Warn if an enabled colour has no image and will use the fallback gallery.
+- Preview the storefront gallery for the currently selected colour.
+
 Actions:
 
 - Save draft
@@ -123,3 +134,22 @@ Provide structured fields, not unrestricted HTML.
 - Confirmation dialog for archive/delete.
 - Accessible labels and validation messages.
 - Never show secret configuration in the UI.
+
+## 9. Administrator user management
+
+Route: `/admin/users`. Visible only to `super_admin`.
+
+Capabilities:
+
+- List all invited, active and inactive administrators.
+- Invite an administrator by email and full name.
+- Assign `super_admin` or `content_admin`.
+- Resend an unaccepted invitation.
+- Change role with confirmation.
+- Activate or deactivate access.
+- Show invitation state, created date and last sign-in where safely available.
+- Prevent deactivation or demotion of the last active super admin.
+- Prevent the current user from removing their own final access.
+- Never display or generate temporary passwords in the browser.
+
+Invitations must use a trusted server-side function. The browser must not possess the Supabase service-role key or call Auth Admin APIs directly.

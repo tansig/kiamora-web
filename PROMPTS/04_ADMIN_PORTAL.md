@@ -10,11 +10,14 @@ Build:
 - category CRUD and product assignments;
 - product image upload, validation, alt text, primary selection, reordering and
   safe deletion;
+- Yellow/White/Rose Gold variant tabs with multiple images per colour;
 - homepage/page-content editor;
 - business/settings editor;
+- super-admin-only multiple-user management with invite, role, resend,
+  activate/deactivate and last-super-admin protection;
 - accessible validation, loading, success, error and unsaved-change states.
 
-Do not treat hidden routes as security. Exercise the RLS and Storage-policy
+Match UI_SPECS.md and the admin mockups. Do not treat hidden routes as security. Exercise the RLS and Storage-policy
 tests through the implemented flows. Do not add public registration.
 
 Run all Milestone 4 acceptance tests, fix failures, inspect the browser bundle
