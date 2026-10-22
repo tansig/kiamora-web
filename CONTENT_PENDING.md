@@ -34,7 +34,9 @@ Missing content does not block engineering. Keep unavailable content as draft/hi
 
 ## Editorial
 
-- [ ] Hero content/image
+- [ ] Approve or replace the concept photography under `mockups/assets/`; it must not be presented as actual Kiamora inventory without approval
+- [ ] Final carousel slide copy, CTA destinations and separate desktop/mobile images
+- [ ] Carousel image alt text and focal points
 - [ ] Featured products/categories
 - [ ] Bespoke process
 - [ ] Founder/craftsmanship story

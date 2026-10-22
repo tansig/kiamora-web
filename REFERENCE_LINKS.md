@@ -9,6 +9,12 @@ Use current official documentation when commands or platform behaviour have chan
 - VS Code: https://docs.anthropic.com/en/docs/claude-code/ide-integrations
 - Settings: https://docs.anthropic.com/en/docs/claude-code/settings
 
+## Z.AI GLM Coding Plan
+
+- Coding Plan quick start: https://docs.z.ai/devpack/quick-start
+- Claude Code configuration: https://docs.z.ai/devpack/tool/claude
+- Model switching: https://docs.z.ai/devpack/latest-model
+
 ## GitHub
 
 - Create repository: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository
@@ -25,13 +31,22 @@ Use current official documentation when commands or platform behaviour have chan
 
 ## Cloudflare
 
-- Astro on Workers: https://developers.cloudflare.com/workers/framework-guides/web-apps/astro/
+- Angular on Workers: https://developers.cloudflare.com/workers/framework-guides/web-apps/more-web-frameworks/angular/
 - Workers limits: https://developers.cloudflare.com/workers/platform/limits/
 - Custom domains: https://developers.cloudflare.com/workers/configuration/routing/custom-domains/
 
-## Astro
+## Angular
 
-- Documentation: https://docs.astro.build/
-- Cloudflare adapter: https://docs.astro.build/en/guides/integrations-guide/cloudflare/
+- Documentation: https://angular.dev/
+- Releases: https://angular.dev/reference/releases
+- Installation: https://angular.dev/installation
+- Hybrid rendering: https://angular.dev/guide/hybrid-rendering
+- Angular on Cloudflare Workers: https://developers.cloudflare.com/workers/framework-guides/web-apps/more-web-frameworks/angular/
+
+## Design benchmark — reference only
+
+- Tanishq public storefront: https://www.tanishq.co.in/
+
+Use this only to understand mature jewellery-store discovery, category, trust and service patterns. Do not copy code, wording, campaign creative, layouts or assets.
 
 Re-check official documentation before acting on pricing, quotas, CLI flags or authentication settings.

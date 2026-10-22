@@ -40,7 +40,7 @@ Install:
 Recommended VS Code extensions:
 
 - Claude Code
-- Astro
+- Angular Language Service
 - ESLint
 - Prettier
 - EditorConfig
@@ -60,18 +60,17 @@ Verify:
 git --version
 node --version
 npm --version
+npx.cmd --version
 code --version
 claude --version
+claude doctor
 ```
 
-Start Claude once and complete personal browser authentication:
-
-```powershell
-claude
-```
-
-- [ ] Confirm the logged-in Claude account is personal.
+- [ ] Complete `GLM_5_3_FLASH_SETUP.md` before the first Claude session.
+- [ ] Run Claude from a small test folder and use `/status` to confirm the Z.AI Anthropic-compatible endpoint and `ANTHROPIC_AUTH_TOKEN`.
+- [ ] Confirm all Claude model aliases map to `glm-5.3-flash[1m]`.
 - [ ] Do not import company Claude configuration, sessions or skills.
+- [ ] Do not complete company or employer browser authentication. The selected personal Z.AI Coding Plan is the model provider for this project.
 
 ## 0.3 Configure personal Git identity — YOU
 
@@ -126,7 +125,7 @@ git push -u origin main
    - Project URL
    - Publishable/anonymous key
    - Project reference ID
-9. Never copy the service-role key into frontend code.
+9. Never copy the service-role key into frontend code, `.env`, an Angular environment file or chat.
 10. Do not manually create tables yet; Claude will create version-controlled migrations.
 
 Create `.env` locally from `.env.example`:
@@ -142,9 +141,21 @@ Populate only the public URL and publishable/anonymous key. Confirm `.env` is ig
 - [ ] Enable email/password authentication.
 - [ ] Disable public self-registration if the dashboard exposes that option.
 - [ ] Do not create a public registration page.
-- [ ] Add `http://localhost:4321/auth/callback` as a local redirect URL when required.
+- [ ] Add `http://localhost:4200/auth/callback` as a local redirect URL when required.
 - [ ] Add the Cloudflare preview and final domain callback URLs after deployment.
-- [ ] Create/invite the first admin only after migrations and policies exist.
+- [ ] Create the first Supabase Auth user for the initial Kiamora super admin only after migrations and policies exist.
+- [ ] Ask Claude to provide the reviewed, one-time SQL statement that links that Auth user to an active `super_admin` profile; run it in the Supabase SQL Editor and retain no secret in the repository.
+
+### Privileged admin-user function — YOU, after Claude implements it
+
+The `/admin/users` screen needs a trusted Supabase Edge Function or equivalent protected server endpoint for invitations, role changes and account deactivation.
+
+- [ ] Review the function implementation and its authorisation tests before deployment.
+- [ ] Add `SUPABASE_SERVICE_ROLE_KEY` through Supabase Edge Function secrets (or the chosen server platform's encrypted secret store) only.
+- [ ] Do not prefix this secret with `PUBLIC_` and do not add it to `.env.example` or the Angular build.
+- [ ] Deploy the function, then verify a content admin receives `403` while an active super admin succeeds.
+- [ ] Verify the last active super admin cannot be deactivated or demoted.
+- [ ] Send an invitation to a test personal address before inviting production administrators.
 
 ## 0.6 Prepare Supabase CLI access — YOU
 

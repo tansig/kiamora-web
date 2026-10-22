@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600" height="1500" viewBox="0 0 1600 1500">
+  <defs>
+    <linearGradient id="bannerShade" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#1C110C" stop-opacity=".88"/><stop offset=".55" stop-color="#1C110C" stop-opacity=".2"/><stop offset="1" stop-color="#1C110C" stop-opacity=".05"/></linearGradient>
+    <clipPath id="banner"><rect y="122" width="1600" height="335"/></clipPath>
+    <clipPath id="p1"><rect x="350" y="720" width="280" height="270"/></clipPath><clipPath id="p2"><rect x="650" y="720" width="280" height="270"/></clipPath><clipPath id="p3"><rect x="950" y="720" width="280" height="270"/></clipPath><clipPath id="p4"><rect x="1250" y="720" width="280" height="270"/></clipPath>
+    <clipPath id="p5"><rect x="350" y="1110" width="280" height="270"/></clipPath><clipPath id="p6"><rect x="650" y="1110" width="280" height="270"/></clipPath><clipPath id="p7"><rect x="950" y="1110" width="280" height="270"/></clipPath><clipPath id="p8"><rect x="1250" y="1110" width="280" height="270"/></clipPath>
+    <style>.serif{font-family:Georgia,'Times New Roman',serif}.sans{font-family:Arial,Helvetica,sans-serif}.ink{fill:#2B211B}.muted{fill:#776A60}.caps{font-family:Arial,Helvetica,sans-serif;letter-spacing:2.4px}</style>
+  </defs>
+  <rect width="1600" height="1500" fill="#FFFCF7"/>
+  <rect width="1600" height="36" fill="#251711"/><text x="800" y="23" text-anchor="middle" class="sans" font-size="11" letter-spacing="2" fill="#F8EDDE">PRIVATE CONSULTATIONS · BESPOKE LAB-GROWN DIAMOND JEWELLERY</text>
+  <rect y="36" width="1600" height="86" fill="#FFFCF7"/><line x1="0" y1="121" x2="1600" y2="121" stroke="#E6DDD1"/>
+  <text x="65" y="79" class="serif ink" font-size="29" letter-spacing="7">KIAMORA</text><text x="99" y="99" class="sans muted" font-size="8" letter-spacing="2">BY DT DIAMONDS</text>
+  <g class="sans ink" font-size="14"><text x="430" y="84">New In</text><text x="505" y="84">Rings</text><text x="570" y="84">Earrings</text><text x="652" y="84">Necklaces</text><text x="755" y="84">Collections</text><text x="858" y="84">Bespoke</text><text x="942" y="84">Our Story</text></g>
+  <g fill="none" stroke="#2D231D" stroke-width="1.6"><circle cx="1395" cy="76" r="11"/><line x1="1403" y1="84" x2="1412" y2="93"/><circle cx="1454" cy="70" r="7"/><path d="M1441 94c1-11 6-16 13-16s12 5 13 16"/><path d="M1500 67h25l-2 28h-21z"/></g>
+
+  <g clip-path="url(#banner)"><image x="0" y="122" width="1600" height="470" xlink:href="assets/hero-promise-moment.png" preserveAspectRatio="xMidYMid slice"/></g><rect y="122" width="1600" height="335" fill="url(#bannerShade)"/>
+  <g fill="#FFF9EF"><text x="90" y="230" class="caps" font-size="12">KIAMORA COLLECTIONS</text><text x="90" y="296" class="serif" font-size="58">Rings with a reason.</text><text x="90" y="341" class="serif" font-size="20">Made to mark a promise, a milestone or a beginning.</text><rect x="90" y="376" width="186" height="48" fill="#FFF9EF"/><text x="183" y="406" text-anchor="middle" class="sans ink" font-size="11" letter-spacing="2">DESIGN YOURS →</text></g>
+
+  <text x="58" y="506" class="sans muted" font-size="12">HOME  /  JEWELLERY  /  RINGS</text>
+  <text x="58" y="563" class="serif ink" font-size="43">Rings</text><text x="58" y="597" class="serif muted" font-size="17">36 thoughtful designs · every piece made to order</text>
+  <rect x="58" y="628" width="1470" height="58" fill="#F4EEE5"/>
+  <g class="sans ink" font-size="12"><text x="80" y="663">FILTERS  3</text><text x="225" y="663">Category⌄</text><text x="340" y="663">Gold colour⌄</text><text x="470" y="663">Price⌄</text><text x="560" y="663">Occasion⌄</text><text x="1430" y="663" text-anchor="end">SORT: FEATURED⌄</text><text x="1500" y="663" text-anchor="end">▦  ☰</text></g>
+
+  <g transform="translate(58 720)">
+    <text class="caps ink" font-size="11">REFINE</text><line y1="25" x2="240" y2="25" stroke="#DDD2C5"/>
+    <text y="65" class="serif ink" font-size="20">Gold colour</text>
+    <circle cy="102" r="10" fill="#D6B768"/><text x="25" y="107" class="sans muted" font-size="13">Yellow Gold</text><circle cy="139" r="10" fill="#D8D8D3" stroke="#AAA"/><text x="25" y="144" class="sans muted" font-size="13">White Gold</text><circle cy="176" r="10" fill="#C9907D"/><text x="25" y="181" class="sans muted" font-size="13">Rose Gold</text>
+    <line y1="215" x2="240" y2="215" stroke="#DDD2C5"/><text y="255" class="serif ink" font-size="20">Style</text><text y="293" class="sans muted" font-size="13">□ Solitaire</text><text y="330" class="sans muted" font-size="13">□ Halo</text><text y="367" class="sans muted" font-size="13">□ Floral</text><text y="404" class="sans muted" font-size="13">□ Bands</text>
+    <line y1="445" x2="240" y2="445" stroke="#DDD2C5"/><text y="485" class="serif ink" font-size="20">Budget</text><text y="526" class="sans muted" font-size="13">₹50,000 ━━━━━ ₹3,00,000+</text>
+  </g>
+
+  <g clip-path="url(#p1)"><image x="240" y="700" width="500" height="281" xlink:href="assets/signature-collection.png" preserveAspectRatio="xMinYMid slice"/></g><g clip-path="url(#p2)"><image x="510" y="680" width="560" height="315" xlink:href="assets/signature-floral-ring.png" preserveAspectRatio="xMidYMid slice"/></g><g clip-path="url(#p3)"><image x="690" y="690" width="650" height="366" xlink:href="assets/signature-collection.png" preserveAspectRatio="xMidYMid slice"/></g><g clip-path="url(#p4)"><image x="950" y="680" width="700" height="394" xlink:href="assets/signature-floral-ring.png" preserveAspectRatio="xMaxYMid slice"/></g>
+  <g clip-path="url(#p5)"><image x="190" y="1070" width="620" height="349" xlink:href="assets/signature-floral-ring.png" preserveAspectRatio="xMinYMid slice"/></g><g clip-path="url(#p6)"><image x="450" y="1075" width="660" height="371" xlink:href="assets/signature-collection.png" preserveAspectRatio="xMidYMid slice"/></g><g clip-path="url(#p7)"><image x="720" y="1070" width="650" height="366" xlink:href="assets/signature-floral-ring.png" preserveAspectRatio="xMidYMid slice"/></g><g clip-path="url(#p8)"><image x="930" y="1070" width="760" height="427" xlink:href="assets/signature-collection.png" preserveAspectRatio="xMaxYMid slice"/></g>
+  <g class="serif ink" font-size="17"><text x="350" y="1022">Promise Solitaire Ring</text><text x="650" y="1022">Kiamora Bloom Ring</text><text x="950" y="1022">Petal Halo Ring</text><text x="1250" y="1022">Eternity Band</text><text x="350" y="1412">Signature Flower Ring</text><text x="650" y="1412">Quiet Brilliance Ring</text><text x="950" y="1412">Milestone Halo Ring</text><text x="1250" y="1412">Everyday Diamond Band</text></g>
+  <g class="sans muted" font-size="11"><text x="350" y="1046">From ₹82,000 · 3 colours</text><text x="650" y="1046">From ₹95,000 · 3 colours</text><text x="950" y="1046">Private price · 2 colours</text><text x="1250" y="1046">From ₹68,000 · 3 colours</text><text x="350" y="1436">From ₹1,05,000</text><text x="650" y="1436">From ₹74,000</text><text x="950" y="1436">Private price</text><text x="1250" y="1436">From ₹59,000</text></g>
+  <g fill="none" stroke="#6F6157"><path d="M603 744c-7-9-19 2 0 15 19-13 7-24 0-15z"/><path d="M903 744c-7-9-19 2 0 15 19-13 7-24 0-15z"/><path d="M1203 744c-7-9-19 2 0 15 19-13 7-24 0-15z"/><path d="M1503 744c-7-9-19 2 0 15 19-13 7-24 0-15z"/></g>
+</svg>

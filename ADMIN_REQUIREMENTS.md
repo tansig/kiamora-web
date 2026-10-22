@@ -53,6 +53,17 @@ Optional/configurable fields:
 - SEO title/description
 - Custom WhatsApp message
 
+### Gold-colour variants and images
+
+- Enable any combination of Yellow Gold, White Gold and Rose Gold.
+- Require one enabled default colour before publication.
+- Display a dedicated editor tab for each enabled colour.
+- Allow multiple images per colour, drag/reorder, primary-image selection and alt text.
+- Show upload progress and per-file errors.
+- Support shared/general images only when explicitly marked.
+- Warn if an enabled colour has no image and will use the fallback gallery.
+- Preview the storefront gallery for the currently selected colour.
+
 Actions:
 
 - Save draft
@@ -92,15 +103,18 @@ Warn before deactivation. Block permanent deletion when products are assigned un
 Editable settings:
 
 - Announcement
-- Hero heading/subheading/image
-- Primary/secondary CTA labels and links
+- Carousel slides with separate desktop/mobile images
+- Slide eyebrow, heading, supporting copy, primary/secondary CTA labels and links
+- Slide focal points, accessible alt text, visibility, schedule and sort order
+- Carousel autoplay/interval within accessible limits
 - Featured categories/products
 - Bespoke intro
 - About preview
 - Consultation CTA
 - Section visibility
+- Section ordering
 
-Provide structured fields, not unrestricted HTML.
+Provide structured fields, not unrestricted HTML. Show desktop/mobile previews, contrast status, missing-image warnings and broken-reference validation. Publishing must be atomic so an incomplete draft never replaces the live homepage.
 
 ## 7. Business settings
 
@@ -123,3 +137,22 @@ Provide structured fields, not unrestricted HTML.
 - Confirmation dialog for archive/delete.
 - Accessible labels and validation messages.
 - Never show secret configuration in the UI.
+
+## 9. Administrator user management
+
+Route: `/admin/users`. Visible only to `super_admin`.
+
+Capabilities:
+
+- List all invited, active and inactive administrators.
+- Invite an administrator by email and full name.
+- Assign `super_admin` or `content_admin`.
+- Resend an unaccepted invitation.
+- Change role with confirmation.
+- Activate or deactivate access.
+- Show invitation state, created date and last sign-in where safely available.
+- Prevent deactivation or demotion of the last active super admin.
+- Prevent the current user from removing their own final access.
+- Never display or generate temporary passwords in the browser.
+
+Invitations must use a trusted server-side function. The browser must not possess the Supabase service-role key or call Auth Admin APIs directly.

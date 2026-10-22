@@ -9,6 +9,7 @@ Read these files before changing code:
 5. `DATABASE_DESIGN.md`
 6. `SECURITY.md`
 7. `CONTENT_PENDING.md`
+8. `UI_SPECS.md`
 
 ## Operating rules
 
@@ -27,20 +28,24 @@ Read these files before changing code:
 13. Prefer archive/soft delete for business content. Confirm permanent deletion.
 14. Every order is bespoke. Do not add cart, checkout, payment or `Buy Now` wording.
 15. Keep the public storefront fast, accessible, mobile-first and SEO-friendly.
-16. Keep forms typed and validated with readable errors.
-17. Do not claim completion until checks, tests and production build pass.
-18. Stop and ask before adding a paid dependency or service.
+16. Treat all `mockups/storefront-*` screens as the minimum storefront quality and hierarchy baseline; implement original Kiamora design rather than copying a benchmark retailer.
+17. Homepage carousel motion must respect reduced-motion, keyboard focus and page visibility, and must not compromise LCP or cause layout shift.
+18. Keep forms typed and validated with readable errors.
+19. Do not claim completion until checks, tests and production build pass.
+20. Stop and ask before adding a paid dependency or service.
 
 ## Required stack
 
-- Astro with TypeScript and Cloudflare adapter
-- React for interactive admin components
+- Latest stable Angular 22.x patch at project creation
+- Angular standalone components, strict TypeScript and Signals
+- Angular hybrid rendering: SSR for public catalogue/product routes, CSR for protected admin interactions, and prerendering for suitable static pages
+- Angular Material 3 and Angular CDK for accessible admin primitives; custom Kiamora styling for storefront
 - Supabase PostgreSQL, Auth and Storage
-- `@supabase/supabase-js` and the supported SSR/session approach
+- `@supabase/supabase-js` with an SSR-safe session approach
 - Zod or equivalent typed validation
-- Vitest for unit tests
+- Angular's current Vitest-based unit testing
 - Playwright for critical browser journeys
-- CSS variables/components or another documented maintainable styling approach
+- SCSS/CSS design tokens matching `UI_SPECS.md`
 
 ## Definition of done
 

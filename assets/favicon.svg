@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#f7f1e8"/>
+  <g fill="none" stroke="#2a1d17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M32 8 40 21 32 34 24 21Z"/>
+    <path d="M32 34c-7-3-13-10-14-19 8 1 13 5 14 12m0 7c7-3 13-10 14-19-8 1-13 5-14 12"/>
+  </g>
+  <text x="32" y="54" text-anchor="middle" fill="#2a1d17" font-family="Georgia, serif" font-size="15">K</text>
+</svg>

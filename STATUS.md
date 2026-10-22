@@ -23,7 +23,9 @@
 - WhatsApp is the primary customer conversion.
 - Secure Kiamora admin portal is in MVP scope.
 - Supabase supplies PostgreSQL, Auth and Storage.
-- Astro SSR is deployed to Cloudflare Workers.
+- Angular 22.x hybrid rendering is deployed to Cloudflare Workers.
+- Multiple administrator users are managed by super admins through `/admin/users`.
+- Products support Yellow Gold, White Gold and Rose Gold variants with multiple images per colour.
 - Deep green, ivory and restrained gold visual direction.
 - Diamond remains in the Kiamora emblem.
 
@@ -41,6 +43,8 @@
 
 - Expanded scope from static storefront to database-backed storefront plus admin portal.
 - Prepared new Claude CLI implementation pack.
+- Revised the GUI stack to Angular 22.x and added user-management, UI specifications, mockups and colour-variant requirements.
+- Replaced the initial storefront direction with a professional Kiamora editorial commerce system: multi-slide homepage carousel, desktop/mobile homepage, collection listing, upgraded product page and admin carousel editor mockups.
 
 ## Next action
 

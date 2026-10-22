@@ -10,10 +10,16 @@ Build:
 - category CRUD and product assignments;
 - product image upload, validation, alt text, primary selection, reordering and
   safe deletion;
-- homepage/page-content editor;
+- Yellow/White/Rose Gold variant tabs with multiple images per colour;
+- homepage/page-content editor, including structured carousel slide CRUD,
+  reorder, responsive media, focal points, alt text, CTA validation, scheduling,
+  accessible behaviour configuration and desktop/mobile preview;
 - business/settings editor;
+- super-admin-only multiple-user management with invite, role, resend,
+  activate/deactivate and last-super-admin protection;
 - accessible validation, loading, success, error and unsaved-change states.
 
+Match UI_SPECS.md and all admin mockups, including `admin-homepage-carousel.*`.
 Do not treat hidden routes as security. Exercise the RLS and Storage-policy
 tests through the implemented flows. Do not add public registration.
 

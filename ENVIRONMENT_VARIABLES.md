@@ -25,7 +25,9 @@ PUBLIC_DATABASE_PASSWORD
 PUBLIC_GITHUB_TOKEN
 ```
 
-If privileged server credentials become necessary, document why, keep them server-only, add them through the hosting dashboard and never expose them through client bundles. The MVP should avoid the service-role key during normal application runtime.
+Administrator invitation and Supabase Auth Admin operations require a privileged credential. Configure `SUPABASE_SERVICE_ROLE_KEY` only as an encrypted secret of the protected Supabase Edge Function or server runtime that performs those operations. It must never be placed in `.env.example`, an Angular environment file, a `PUBLIC_*` variable, a browser bundle, logs or screenshots.
+
+The Angular application sends the signed-in administrator's access token to that protected endpoint. The endpoint must validate the token, confirm an active `super_admin` role and enforce the last-super-admin rule before using the Auth Admin API. Ordinary catalogue and admin data operations continue to use the browser-safe publishable/anonymous key with RLS.
 
 ## Environments
 

@@ -14,6 +14,8 @@ Before applying anything remotely:
 5. Prove that public users can read only published/active content.
 6. Prove anonymous and unauthorised writes/uploads fail.
 7. Confirm that no service-role key is required in browser code.
+8. Implement a protected server-side/Edge Function contract for super-admin invitations,
+   role changes and deactivation. Never expose Auth Admin credentials to Angular.
 
 Apply migrations locally or to an isolated local test environment first. Show me
 the migration summary and security-test results before requesting approval to
