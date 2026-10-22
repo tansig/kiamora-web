@@ -60,18 +60,17 @@ Verify:
 git --version
 node --version
 npm --version
+npx.cmd --version
 code --version
 claude --version
+claude doctor
 ```
 
-Start Claude once and complete personal browser authentication:
-
-```powershell
-claude
-```
-
-- [ ] Confirm the logged-in Claude account is personal.
+- [ ] Complete `GLM_5_3_FLASH_SETUP.md` before the first Claude session.
+- [ ] Run Claude from a small test folder and use `/status` to confirm the Z.AI Anthropic-compatible endpoint and `ANTHROPIC_AUTH_TOKEN`.
+- [ ] Confirm all Claude model aliases map to `glm-5.3-flash[1m]`.
 - [ ] Do not import company Claude configuration, sessions or skills.
+- [ ] Do not complete company or employer browser authentication. The selected personal Z.AI Coding Plan is the model provider for this project.
 
 ## 0.3 Configure personal Git identity — YOU
 

@@ -17,6 +17,7 @@ Browser
 
 - `START_HERE.md` — exact execution order.
 - `STEP_0_MANUAL_SETUP.md` — accounts, tools and manual configuration.
+- `GLM_5_3_FLASH_SETUP.md` — personal Windows Claude Code configuration using the Z.AI Coding Plan.
 - `STEP_0_1_CUSTOMER_INFORMATION_REQUEST.md` — customer asset request.
 - `CLAUDE.md` — standing Claude Code instructions.
 - `SPEC.md` — functional and technical scope.

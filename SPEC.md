@@ -72,18 +72,16 @@ All admin routes except login and auth callback require an authenticated, active
 
 - Announcement strip
 - Header/navigation
-- Premium hero
-- Featured categories
-- Featured products
-- Bespoke proposition/process
-- Kiamora story
-- Craftsmanship/quality section
-- Approved testimonials only
-- Social link section
-- Consultation CTA
+- Full-width 2–5 slide professional carousel with separate desktop/mobile images, focal points, arrows, dots, swipe, keyboard operation and reduced-motion behaviour
+- Editorial brand manifesto
+- Image-led category discovery
+- Signature collection/editorial split
+- Trending/featured products
+- Kiamora assurance section using only approved claims
+- Private consultation and WhatsApp conversion panel
 - Footer
 
-Default direction: deep green, ivory and restrained gold; elegant serif display type; clean sans-serif body type; generous whitespace; diamond-present Kiamora emblem.
+Default storefront direction: cinematic warm jewellery photography, warm ivory, espresso and restrained champagne gold; elegant serif display type; clean sans-serif body type; generous whitespace; diamond-present Kiamora emblem. Deep forest remains the administrative-portal colour. Use leading jewellery sites such as Tanishq only as a usability and content-architecture benchmark; do not copy their code, text, campaigns, layouts or assets.
 
 ## 7. Catalogue and product page
 
@@ -105,7 +103,7 @@ Default direction: deep green, ivory and restrained gold; elegant serif display 
 - Image upload, alt text, primary selection, reorder and safe deletion.
 - Yellow Gold, White Gold and Rose Gold variants, each with its own multi-image gallery.
 - Featured products/categories and sort order.
-- Homepage and selected editorial content editing.
+- Homepage and selected editorial content editing, including carousel slide CRUD/reorder/schedule, responsive images, focal points, CTA validation and draft preview.
 - Business/contact/default SEO settings.
 - Clear confirmation for destructive actions.
 

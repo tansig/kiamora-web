@@ -4,6 +4,7 @@
 
 - `START_HERE.md`
 - `STEP_0_MANUAL_SETUP.md`
+- `GLM_5_3_FLASH_SETUP.md`
 - `STEP_0_1_CUSTOMER_INFORMATION_REQUEST.md`
 - `PROJECT_VALUES.md`
 - `REFERENCE_LINKS.md`
@@ -35,10 +36,17 @@
 
 ## Professional GUI mockups
 
+- `mockups/storefront-home-desktop.svg/png`
+- `mockups/storefront-home-mobile.svg/png`
+- `mockups/storefront-home-carousel-slide-02.svg/png`
+- `mockups/storefront-collection-desktop.svg/png`
 - `mockups/storefront-product-colour-selection.svg/png`
 - `mockups/admin-dashboard.svg/png`
+- `mockups/admin-homepage-carousel.svg/png`
 - `mockups/admin-product-colour-images.svg/png`
 - `mockups/admin-users.svg/png`
+- `mockups/assets/` — original concept photography used in storefront mockups
+- `mockups/reference/` — user-supplied approved visual direction
 - `mockups/README.md`
 
 ## Ready-to-paste prompts
@@ -51,4 +59,4 @@
 - `PROMPTS/05_QA_DEPLOY.md`
 - `PROMPTS/MASTER_AUTONOMOUS_PROMPT.md`
 
-Pack revision: 16 October 2026.
+Pack revision: 17 October 2026.

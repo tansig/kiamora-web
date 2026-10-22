@@ -103,15 +103,18 @@ Warn before deactivation. Block permanent deletion when products are assigned un
 Editable settings:
 
 - Announcement
-- Hero heading/subheading/image
-- Primary/secondary CTA labels and links
+- Carousel slides with separate desktop/mobile images
+- Slide eyebrow, heading, supporting copy, primary/secondary CTA labels and links
+- Slide focal points, accessible alt text, visibility, schedule and sort order
+- Carousel autoplay/interval within accessible limits
 - Featured categories/products
 - Bespoke intro
 - About preview
 - Consultation CTA
 - Section visibility
+- Section ordering
 
-Provide structured fields, not unrestricted HTML.
+Provide structured fields, not unrestricted HTML. Show desktop/mobile previews, contrast status, missing-image warnings and broken-reference validation. Publishing must be atomic so an incomplete draft never replaces the live homepage.
 
 ## 7. Business settings
 

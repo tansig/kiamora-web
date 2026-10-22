@@ -28,9 +28,11 @@ Read these files before changing code:
 13. Prefer archive/soft delete for business content. Confirm permanent deletion.
 14. Every order is bespoke. Do not add cart, checkout, payment or `Buy Now` wording.
 15. Keep the public storefront fast, accessible, mobile-first and SEO-friendly.
-16. Keep forms typed and validated with readable errors.
-17. Do not claim completion until checks, tests and production build pass.
-18. Stop and ask before adding a paid dependency or service.
+16. Treat all `mockups/storefront-*` screens as the minimum storefront quality and hierarchy baseline; implement original Kiamora design rather than copying a benchmark retailer.
+17. Homepage carousel motion must respect reduced-motion, keyboard focus and page visibility, and must not compromise LCP or cause layout shift.
+18. Keep forms typed and validated with readable errors.
+19. Do not claim completion until checks, tests and production build pass.
+20. Stop and ask before adding a paid dependency or service.
 
 ## Required stack
 

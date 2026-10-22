@@ -1,52 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600" height="1200" viewBox="0 0 1600 1200">
   <defs>
-    <linearGradient id="ivory" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffdf8"/><stop offset="1" stop-color="#f0eadc"/></linearGradient>
-    <radialGradient id="jewel" cx="50%" cy="42%"><stop stop-color="#ffffff"/><stop offset=".45" stop-color="#dceee9"/><stop offset="1" stop-color="#b8cec7"/></radialGradient>
-    <filter id="shadow"><feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#0d3b32" flood-opacity=".12"/></filter>
+    <clipPath id="main"><rect x="62" y="242" width="760" height="672"/></clipPath><clipPath id="thumb1"><rect x="62" y="938" width="137" height="130"/></clipPath><clipPath id="thumb2"><rect x="217" y="938" width="137" height="130"/></clipPath><clipPath id="thumb3"><rect x="372" y="938" width="137" height="130"/></clipPath><clipPath id="thumb4"><rect x="527" y="938" width="137" height="130"/></clipPath>
+    <style>.serif{font-family:Georgia,'Times New Roman',serif}.sans{font-family:Arial,Helvetica,sans-serif}.ink{fill:#2B211B}.muted{fill:#776A60}.caps{font-family:Arial,Helvetica,sans-serif;letter-spacing:2.3px}</style>
   </defs>
-  <rect width="1600" height="1000" fill="#fbf8f1"/>
-  <rect width="1600" height="36" fill="#0d3b32"/>
-  <text x="800" y="24" text-anchor="middle" fill="#f7f1e5" font-family="Arial" font-size="12" letter-spacing="2">PRIVATE CONSULTATIONS · BESPOKE CREATIONS</text>
-  <rect y="36" width="1600" height="90" fill="#fffdf8"/>
-  <line x1="0" y1="126" x2="1600" y2="126" stroke="#dfd8c8"/>
-  <path d="M112 61 L126 48 L140 61 L126 80 Z M116 61 L126 72 L136 61" fill="none" stroke="#c6a66b" stroke-width="2"/>
-  <text x="155" y="77" fill="#0d3b32" font-family="Georgia" font-size="33" letter-spacing="6">KIAMORA</text>
-  <g fill="#34443f" font-family="Arial" font-size="14" letter-spacing="1.2">
-    <text x="625" y="74">NEW</text><text x="700" y="74">RINGS</text><text x="790" y="74">EARRINGS</text><text x="900" y="74">NECKLACES</text><text x="1025" y="74">BESPOKE</text><text x="1125" y="74">OUR STORY</text>
+  <rect width="1600" height="1200" fill="#FFFCF7"/>
+  <rect width="1600" height="36" fill="#251711"/><text x="800" y="23" text-anchor="middle" class="sans" font-size="11" letter-spacing="2" fill="#F8EDDE">COMPLIMENTARY PRIVATE CONSULTATION WITH EVERY BESPOKE ORDER</text>
+  <rect y="36" width="1600" height="86" fill="#FFFCF7"/><line x1="0" y1="121" x2="1600" y2="121" stroke="#E6DDD1"/>
+  <text x="65" y="79" class="serif ink" font-size="29" letter-spacing="7">KIAMORA</text><text x="99" y="99" class="sans muted" font-size="8" letter-spacing="2">BY DT DIAMONDS</text>
+  <g class="sans ink" font-size="14"><text x="430" y="84">New In</text><text x="505" y="84">Rings</text><text x="570" y="84">Earrings</text><text x="652" y="84">Necklaces</text><text x="755" y="84">Collections</text><text x="858" y="84">Bespoke</text><text x="942" y="84">Our Story</text></g>
+  <g fill="none" stroke="#2D231D" stroke-width="1.6"><circle cx="1395" cy="76" r="11"/><line x1="1403" y1="84" x2="1412" y2="93"/><circle cx="1454" cy="70" r="7"/><path d="M1441 94c1-11 6-16 13-16s12 5 13 16"/><path d="M1500 67h25l-2 28h-21z"/></g>
+  <text x="62" y="176" class="sans muted" font-size="11">HOME  /  RINGS  /  KIAMORA BLOOM RING</text>
+
+  <g clip-path="url(#main)"><image x="-70" y="208" width="1000" height="712" xlink:href="assets/signature-floral-ring.png" preserveAspectRatio="xMidYMid slice"/></g>
+  <rect x="74" y="257" width="95" height="28" rx="14" fill="#FFF9F0" fill-opacity=".92"/><text x="121" y="275" text-anchor="middle" class="sans" font-size="9" letter-spacing="1.4" fill="#72583B">BESTSELLER</text>
+  <g clip-path="url(#thumb1)"><image x="-20" y="920" width="300" height="169" xlink:href="assets/signature-floral-ring.png" preserveAspectRatio="xMinYMid slice"/></g><rect x="61" y="937" width="139" height="132" fill="none" stroke="#9A7440" stroke-width="3"/>
+  <g clip-path="url(#thumb2)"><image x="80" y="920" width="380" height="214" xlink:href="assets/signature-floral-ring.png" preserveAspectRatio="xMidYMid slice"/></g>
+  <g clip-path="url(#thumb3)"><image x="210" y="920" width="430" height="242" xlink:href="assets/signature-collection.png" preserveAspectRatio="xMinYMid slice"/></g>
+  <g clip-path="url(#thumb4)"><image x="350" y="920" width="450" height="253" xlink:href="assets/signature-collection.png" preserveAspectRatio="xMidYMid slice"/></g>
+  <rect x="682" y="938" width="140" height="130" fill="#F3EDE4"/><text x="752" y="1006" text-anchor="middle" class="sans muted" font-size="11">360° VIEW</text>
+
+  <g transform="translate(900 228)">
+    <text class="caps" font-size="10" fill="#9B7440">THE SIGNATURE COLLECTION</text>
+    <text y="58" class="serif ink" font-size="48">Kiamora Bloom Ring</text>
+    <text y="91" class="sans muted" font-size="12">Reference KM-RG-014 · Made to order</text>
+    <line y1="120" x2="620" y2="120" stroke="#E0D6CA"/>
+    <text y="170" class="serif ink" font-size="27">From ₹95,000</text><text x="200" y="170" class="sans muted" font-size="11">Final price after configuration</text>
+    <text y="220" class="sans ink" font-size="12" font-weight="bold">SELECT GOLD COLOUR</text><text x="620" y="220" text-anchor="end" class="sans" font-size="11" fill="#9A7440">Rose Gold selected</text>
+
+    <g transform="translate(0 246)">
+      <rect width="184" height="74" fill="#FFFCF7" stroke="#D8CDBF"/><circle cx="28" cy="27" r="12" fill="#D6B768"/><text x="52" y="31" class="sans ink" font-size="13">Yellow Gold</text><text x="52" y="52" class="sans muted" font-size="10">18K · warm classic</text>
+      <g transform="translate(199 0)"><rect width="184" height="74" fill="#FFFCF7" stroke="#D8CDBF"/><circle cx="28" cy="27" r="12" fill="#D8D8D3" stroke="#AFAFA8"/><text x="52" y="31" class="sans ink" font-size="13">White Gold</text><text x="52" y="52" class="sans muted" font-size="10">18K · cool brilliance</text></g>
+      <g transform="translate(398 0)"><rect width="184" height="74" fill="#FFF8F3" stroke="#9A7440" stroke-width="2"/><circle cx="28" cy="27" r="12" fill="#C9907D"/><path d="M20 27l6 6 11-14" fill="none" stroke="#FFF" stroke-width="2"/><text x="52" y="31" class="sans ink" font-size="13">Rose Gold</text><text x="52" y="52" class="sans muted" font-size="10">18K · selected</text></g>
+    </g>
+
+    <rect y="348" width="620" height="72" fill="#F5EEE5"/><text x="18" y="377" class="sans ink" font-size="12" font-weight="bold">Viewing Rose Gold imagery</text><text x="18" y="399" class="sans muted" font-size="11">Gallery, price and enquiry will use this colour configuration.</text>
+    <text y="466" class="sans ink" font-size="12" font-weight="bold">YOUR CONFIGURATION</text>
+    <g class="sans" font-size="12"><text y="500" class="muted">Metal</text><text x="225" y="500" class="ink">18K Rose Gold</text><text y="531" class="muted">Centre diamond</text><text x="225" y="531" class="ink">1.00 ct Lab-Grown · Round</text><text y="562" class="muted">Estimated delivery</text><text x="225" y="562" class="ink">3–4 weeks after approval</text></g>
+    <line y1="589" x2="620" y2="589" stroke="#E0D6CA"/>
+    <rect y="620" width="404" height="58" fill="#2A1B15"/><text x="202" y="655" text-anchor="middle" class="sans" font-size="12" letter-spacing="2" fill="#FFF9EF">CUSTOMISE ON WHATSAPP →</text>
+    <rect x="420" y="620" width="72" height="58" fill="none" stroke="#2A1B15"/><text x="456" y="655" text-anchor="middle" font-size="23" fill="#2A1B15">♡</text><rect x="508" y="620" width="112" height="58" fill="none" stroke="#2A1B15"/><text x="564" y="655" text-anchor="middle" class="sans ink" font-size="11">SHARE</text>
+    <text y="722" class="serif ink" font-size="20">Why you will love it</text><text y="753" class="serif muted" font-size="15">A floral halo that feels distinctive yet effortless,</text><text y="776" class="serif muted" font-size="15">refined around your preferred diamond and gold colour.</text>
+    <g transform="translate(0 816)" class="sans" font-size="11" fill="#5E5148"><text>◇ CERTIFIED DIAMOND</text><text x="196">◇ TRANSPARENT PRICING</text><text x="405">◇ PERSONAL SPECIALIST</text></g>
   </g>
-  <circle cx="1390" cy="70" r="18" fill="none" stroke="#0d3b32"/><path d="M1403 83l13 13" stroke="#0d3b32" stroke-width="2"/>
-  <rect x="120" y="166" width="1360" height="760" fill="#fffdf8" filter="url(#shadow)"/>
-  <text x="164" y="205" fill="#7d8682" font-family="Arial" font-size="12" letter-spacing="1.5">HOME  /  RINGS  /  AURELIA</text>
-  <rect x="164" y="235" width="720" height="610" rx="4" fill="url(#ivory)"/>
-  <circle cx="524" cy="518" r="186" fill="#f5f1e7"/>
-  <ellipse cx="524" cy="595" rx="128" ry="174" fill="none" stroke="#c9907d" stroke-width="28"/>
-  <path d="M471 436 L524 376 L577 436 L558 494 L490 494 Z" fill="url(#jewel)" stroke="#a8bbb6" stroke-width="3"/>
-  <path d="M524 376 L524 494 M471 436 L577 436 M490 494 L524 376 L558 494" stroke="#ffffff" stroke-width="2" opacity=".8"/>
-  <g>
-    <rect x="164" y="861" width="94" height="66" fill="#f4eee3" stroke="#0d3b32" stroke-width="2"/>
-    <rect x="270" y="861" width="94" height="66" fill="#f4eee3"/>
-    <rect x="376" y="861" width="94" height="66" fill="#f4eee3"/>
-    <rect x="482" y="861" width="94" height="66" fill="#f4eee3"/>
-    <rect x="588" y="861" width="94" height="66" fill="#f4eee3"/>
-    <g fill="none" stroke="#c9907d" stroke-width="5"><ellipse cx="211" cy="893" rx="18" ry="24"/><ellipse cx="317" cy="893" rx="26" ry="12"/><ellipse cx="423" cy="893" rx="14" ry="24"/><ellipse cx="529" cy="893" rx="23" ry="18"/><ellipse cx="635" cy="893" rx="17" ry="25"/></g>
-  </g>
-  <text x="940" y="260" fill="#9a7d49" font-family="Arial" font-size="12" letter-spacing="2">SIGNATURE ENGAGEMENT</text>
-  <text x="940" y="316" fill="#18352e" font-family="Georgia" font-size="46">Aurelia Emerald Ring</text>
-  <text x="940" y="350" fill="#7d8682" font-family="Arial" font-size="13" letter-spacing="1.4">REFERENCE KIA-RNG-001</text>
-  <line x1="940" y1="380" x2="1418" y2="380" stroke="#e4ded0"/>
-  <text x="940" y="427" fill="#18352e" font-family="Georgia" font-size="30">As shown: ₹1,85,000</text>
-  <text x="940" y="458" fill="#68736f" font-family="Arial" font-size="14">Final quotation reflects your selected stone, metal, size and personalisation.</text>
-  <text x="940" y="514" fill="#18352e" font-family="Arial" font-size="13" font-weight="700" letter-spacing="1.2">SELECT GOLD COLOUR</text>
-  <g font-family="Arial" font-size="13">
-    <rect x="940" y="537" width="140" height="52" rx="6" fill="#fff" stroke="#ddd7c8"/><circle cx="963" cy="563" r="9" fill="#d6b768"/><text x="981" y="568" fill="#3f4a46">Yellow Gold</text>
-    <rect x="1092" y="537" width="140" height="52" rx="6" fill="#fff" stroke="#ddd7c8"/><circle cx="1115" cy="563" r="9" fill="#d8d8d3" stroke="#aaa"/><text x="1133" y="568" fill="#3f4a46">White Gold</text>
-    <rect x="1244" y="537" width="140" height="52" rx="6" fill="#fdf8f5" stroke="#0d3b32" stroke-width="2"/><circle cx="1267" cy="563" r="9" fill="#c9907d"/><text x="1285" y="568" fill="#18352e" font-weight="700">Rose Gold</text><circle cx="1371" cy="548" r="8" fill="#0d3b32"/><path d="M1367 548l3 3 5-6" fill="none" stroke="#fff" stroke-width="1.5"/>
-  </g>
-  <text x="940" y="634" fill="#18352e" font-family="Arial" font-size="13" font-weight="700" letter-spacing="1.2">DISPLAYED CONFIGURATION</text>
-  <g fill="#f3efe5" font-family="Arial" font-size="13"><rect x="940" y="652" width="90" height="34" rx="17"/><text x="963" y="674" fill="#47534f">18K Gold</text><rect x="1040" y="652" width="152" height="34" rx="17"/><text x="1064" y="674" fill="#47534f">1.50 ct Emerald</text><rect x="1202" y="652" width="130" height="34" rx="17"/><text x="1226" y="674" fill="#47534f">VVS Clarity</text></g>
-  <text x="940" y="732" fill="#5d6864" font-family="Arial" font-size="15">An architectural emerald-cut centre stone, framed in a refined</text>
-  <text x="940" y="756" fill="#5d6864" font-family="Arial" font-size="15">rose-gold setting and tailored to your story.</text>
-  <rect x="940" y="800" width="444" height="58" rx="4" fill="#0d3b32"/>
-  <text x="1162" y="836" text-anchor="middle" fill="#fffdf8" font-family="Arial" font-size="14" font-weight="700" letter-spacing="1.6">CUSTOMISE ON WHATSAPP</text>
-  <text x="940" y="889" fill="#8a7b60" font-family="Arial" font-size="12">Rose Gold selected · Images and enquiry updated</text>
+  <rect y="1136" width="1600" height="64" fill="#2A1B15"/><text x="800" y="1175" text-anchor="middle" class="sans" font-size="11" letter-spacing="2" fill="#FFF7EA">NEED HELP CHOOSING?  WHATSAPP A KIAMORA STYLIST  →</text>
 </svg>

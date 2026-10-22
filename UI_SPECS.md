@@ -21,10 +21,16 @@ These specifications govern both the public storefront and administrative portal
 
 ### Colours
 
+The public storefront uses warm editorial neutrals from the approved homepage direction. Deep forest is retained for the administrative portal so operational screens remain clearly distinct from customer-facing luxury content.
+
 | Token | Value | Use |
 |---|---:|---|
-| `--km-forest-950` | `#082A24` | Storefront header, admin sidebar |
-| `--km-forest-900` | `#0D3B32` | Primary surfaces/actions |
+| `--km-espresso-950` | `#241712` | Storefront dark bands, overlays and primary luxury actions |
+| `--km-espresso-800` | `#3A2920` | Storefront headings and icon strokes |
+| `--km-champagne-500` | `#A98245` | Storefront luxury accent |
+| `--km-champagne-100` | `#E9DFCF` | Editorial feature surfaces |
+| `--km-forest-950` | `#082A24` | Admin sidebar |
+| `--km-forest-900` | `#0D3B32` | Admin primary surfaces/actions |
 | `--km-forest-700` | `#1F5C4D` | Secondary emphasis |
 | `--km-gold-500` | `#C6A66B` | Luxury accent |
 | `--km-gold-300` | `#E2CF9F` | Borders/highlights |
@@ -49,7 +55,7 @@ Meet WCAG AA contrast for normal text and controls. Gold is an accent, not the s
 
 ### Shape and elevation
 
-- Storefront: 0–8px radius, restrained borders, minimal shadow.
+- Storefront: 0–4px radius, restrained borders, minimal shadow and image-led hierarchy.
 - Admin: 10–14px cards, one subtle shadow level.
 - Buttons: 8px radius admin; near-square or 4px luxury storefront treatment.
 - Focus ring: clearly visible 2px forest/gold combination.
@@ -69,11 +75,48 @@ Minimum tap target: 44×44px. No horizontal page scrolling at 390px.
 
 ### Header
 
-- Optional announcement bar.
+- Slim announcement bar for consultation/service messaging.
 - Diamond-present Kiamora emblem and wordmark.
-- Navigation: New, Rings, Earrings, Necklaces, Bespoke, About.
-- Search and WhatsApp/consultation actions.
-- Sticky only when it does not obstruct product imagery.
+- Navigation: New In, Rings, Earrings, Necklaces, Collections, Bespoke and Our Story.
+- Search, profile and saved/bag-style enquiry affordances. A bag icon must not imply checkout in the MVP; it may be omitted or represent a saved enquiry list only.
+- Desktop navigation may open an accessible image-led mega menu. Mobile uses a full-height drawer.
+- Header may become sticky after the hero, but must not obstruct product imagery or cause layout shift.
+
+### Homepage composition
+
+The homepage is a premium editorial journey, not a generic grid of cards. It takes structural inspiration from mature jewellery commerce—fast discovery, collection storytelling, trust and consultation—while using only original Kiamora assets, content and code.
+
+Required order:
+
+1. Announcement strip and global header.
+2. Full-width carousel with 2–5 slides.
+3. Brand manifesto/intro statement.
+4. Image-led category discovery.
+5. Signature collection editorial split.
+6. Trending/featured products.
+7. Kiamora assurance/trust strip.
+8. Private consultation/WhatsApp conversion panel.
+9. Structured footer.
+
+### Homepage carousel
+
+- Minimum desktop visual height: 620px at 1440px viewport; mobile visual height 520–640px depending on copy.
+- Every slide has separate desktop and mobile images, eyebrow, headline, optional supporting copy, primary CTA and optional secondary CTA.
+- Admins set image focal points so crops preserve the jewellery and face/hands.
+- Controls: previous/next arrows, slide dots, keyboard arrows and touch swipe.
+- Autoplay default: six seconds. Pause on pointer hover, keyboard focus, page invisibility and reduced-motion preference.
+- Do not autoplay video in the MVP.
+- Text must meet WCAG AA over a deliberate overlay; never depend on the underlying photo remaining dark.
+- First slide image is prioritised for LCP; later slides are lazy loaded. Avoid cumulative layout shift.
+- Carousel content must be database driven, publishable/schedulable and previewable from `/admin/homepage`.
+
+### Category, editorial and product modules
+
+- Category cards are image-led with concise names and no paragraph overlays.
+- Editorial split modules pair one strong image with one short narrative and a single CTA.
+- Product rows show a maximum of four cards on wide desktop and two on mobile; horizontal scroll is allowed only with clear affordance.
+- Wishlist/saved icons require accessible labels. Do not add cart or checkout behaviour.
+- Trust claims must be approved and evidence-backed; placeholders remain hidden in production.
 
 ### Product detail layout
 
@@ -232,6 +275,19 @@ Explain permissions before submission. Confirmation shows that an invitation was
 
 Destructive/privilege changes require confirmation. Block any action that leaves zero active super admins.
 
+## 8.1 Homepage and carousel editor
+
+Route: `/admin/homepage`.
+
+- Tabs: Carousel, Sections and SEO.
+- Carousel list supports add, duplicate, reorder, enable/disable, schedule and delete with confirmation.
+- Each slide requires desktop image, mobile image, meaningful alt text, focal point, headline and valid internal/external CTA.
+- Preview desktop and mobile crops before publishing.
+- Show validation for contrast, missing responsive images, broken links and unavailable referenced categories/products.
+- Configure autoplay and interval within safe bounds; reduced-motion behaviour cannot be disabled.
+- Section editor controls visibility, order and references to featured categories/products without unrestricted HTML.
+- Publishing is atomic: incomplete changes remain draft and do not replace the currently published homepage.
+
 ## 9. Forms and feedback
 
 - Persistent labels; placeholders never replace labels.
@@ -256,18 +312,28 @@ Destructive/privilege changes require confirmation. Block any action that leaves
 
 | Route | Primary Angular components |
 |---|---|
+| `/` | StorefrontHeader, HeroCarousel, BrandManifesto, CategoryDiscovery, SignatureEditorial, FeaturedProducts, AssuranceStrip, ConsultationCta, StorefrontFooter |
+| `/collections/:slug` | CollectionHero, CatalogueToolbar, FilterDrawer, ProductGrid, ProductCard |
 | `/products/:slug` | ProductGallery, GoldColourSelector, ProductConfiguration, WhatsAppCta |
 | `/admin` | AdminShell, MetricCard, ContentHealth, RecentProducts |
 | `/admin/products/:id/edit` | ProductForm, ColourVariantEditor, VariantImageGrid, PublishPanel |
+| `/admin/homepage` | HomepageEditor, CarouselSlideList, CarouselSlideForm, ResponsivePreview, SectionOrderEditor |
 | `/admin/users` | AdminUserTable, InviteAdminDialog, RoleDialog, UserStatusDialog |
 
 Use feature folders and route-level lazy loading. Keep Supabase access behind typed services/repositories; components do not contain raw queries.
 
 ## 12. Supplied visual references
 
+- `mockups/storefront-home-desktop.svg/png`
+- `mockups/storefront-home-mobile.svg/png`
+- `mockups/storefront-home-carousel-slide-02.svg/png`
+- `mockups/storefront-collection-desktop.svg/png`
 - `mockups/storefront-product-colour-selection.svg/png`
 - `mockups/admin-dashboard.svg/png`
+- `mockups/admin-homepage-carousel.svg/png`
 - `mockups/admin-product-colour-images.svg/png`
 - `mockups/admin-users.svg/png`
+
+The user-supplied direction is preserved under `mockups/reference/`. Original generated visual assets used by these mockups are under `mockups/assets/`; they are concept assets and require business approval before public use.
 
 Implementation must match the hierarchy, density, palette and interaction intent—not blindly reproduce placeholder content or pixel coordinates.

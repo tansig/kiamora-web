@@ -8,7 +8,7 @@ The browser and all public visitors are untrusted. Hiding buttons or routes is n
 
 1. Enable RLS on every table exposed through Supabase APIs.
 2. Revoke unnecessary grants before adding policies.
-3. Anonymous users may select only published products, active categories and public content/settings.
+3. Anonymous users may select only published products, active categories, currently published/scheduled carousel slides and public content/settings.
 4. Authenticated users receive no admin capability merely by being authenticated.
 5. Admin write policies must also verify an active row in `admin_profiles`.
 6. Super-admin-only operations must verify role.

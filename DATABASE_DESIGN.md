@@ -153,6 +153,28 @@ Prefer a single validated row or controlled key/value design. Required values in
 
 Unique: `page_key`, `section_key`.
 
+## `homepage_carousel_slides`
+
+| Column | Notes |
+|---|---|
+| `id` | UUID PK |
+| `eyebrow` | Optional short label |
+| `heading` | Required |
+| `supporting_text` | Optional, length limited |
+| `desktop_image_path` | Required before publication |
+| `mobile_image_path` | Required before publication |
+| `image_alt_text` | Required before publication |
+| `desktop_focal_x/y` | Validated 0–100 percentages |
+| `mobile_focal_x/y` | Validated 0–100 percentages |
+| `primary_cta_label/url` | Required label and validated destination |
+| `secondary_cta_label/url` | Optional pair; both or neither |
+| `status` | `draft`, `published`, `archived` |
+| `starts_at` / `ends_at` | Optional schedule; end must follow start |
+| `sort_order` | Non-negative integer |
+| audit columns | created/updated/by and published timestamp |
+
+Anonymous users may read only currently published, currently scheduled slides. Active administrators manage drafts. Do not store arbitrary HTML or executable URLs.
+
 ## `audit_log` — recommended
 
 - Administrator

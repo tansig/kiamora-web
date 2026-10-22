@@ -52,7 +52,7 @@ Manual checkpoint: user reviews SQL and applies it to the linked project, then c
 ## Milestone 3 — Public storefront
 
 - Header, navigation, footer and responsive shell.
-- Homepage driven by database content.
+- Professional editorial homepage driven by database content, including an accessible responsive carousel, category discovery, signature feature, featured products, assurance and consultation conversion.
 - Collections/category pages.
 - Catalogue search/filter.
 - Product detail pages.
@@ -71,7 +71,7 @@ Gate: only published/active records are public; core journey passes at 390px, 76
 - Multiple category assignment.
 - Image upload/reorder/primary/alt text/delete safeguards.
 - Yellow/White/Rose Gold variants with independent multi-image galleries and storefront preview.
-- Homepage/page content editor.
+- Homepage/page content editor with carousel slide CRUD/reorder/schedule, responsive media, focal points, preview and atomic publishing.
 - Business settings editor.
 - Super-admin user-management page for multiple administrators.
 - Preview and storefront shortcuts.

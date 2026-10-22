@@ -44,6 +44,7 @@
 - Expanded scope from static storefront to database-backed storefront plus admin portal.
 - Prepared new Claude CLI implementation pack.
 - Revised the GUI stack to Angular 22.x and added user-management, UI specifications, mockups and colour-variant requirements.
+- Replaced the initial storefront direction with a professional Kiamora editorial commerce system: multi-slide homepage carousel, desktop/mobile homepage, collection listing, upgraded product page and admin carousel editor mockups.
 
 ## Next action
 

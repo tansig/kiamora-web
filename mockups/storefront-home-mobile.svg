@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="430" height="2800" viewBox="0 0 430 2800">
+  <defs>
+    <linearGradient id="mShade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A100B" stop-opacity=".18"/><stop offset=".7" stop-color="#1A100B" stop-opacity=".5"/><stop offset="1" stop-color="#1A100B" stop-opacity=".85"/></linearGradient>
+    <clipPath id="mh"><rect x="0" y="103" width="430" height="595"/></clipPath>
+    <clipPath id="mc1"><rect x="18" y="910" width="188" height="206"/></clipPath>
+    <clipPath id="mc2"><rect x="224" y="910" width="188" height="206"/></clipPath>
+    <clipPath id="mc3"><rect x="18" y="1134" width="188" height="206"/></clipPath>
+    <clipPath id="mc4"><rect x="224" y="1134" width="188" height="206"/></clipPath>
+    <clipPath id="ms"><rect x="18" y="1448" width="394" height="330"/></clipPath>
+    <clipPath id="mp1"><rect x="18" y="1955" width="190" height="195"/></clipPath>
+    <clipPath id="mp2"><rect x="222" y="1955" width="190" height="195"/></clipPath>
+    <clipPath id="ma"><rect x="0" y="2420" width="430" height="270"/></clipPath>
+    <style>.serif{font-family:Georgia,'Times New Roman',serif}.sans{font-family:Arial,Helvetica,sans-serif}.ink{fill:#2B211B}.muted{fill:#776A60}.caps{font-family:Arial,Helvetica,sans-serif;letter-spacing:2.4px}</style>
+  </defs>
+  <rect width="430" height="2800" fill="#FBF7EF"/>
+  <rect width="430" height="28" fill="#251711"/>
+  <text x="215" y="18" text-anchor="middle" class="sans" font-size="8" letter-spacing="1.4" fill="#F9EFDF">BESPOKE DIAMOND JEWELLERY · CONSULTATIONS</text>
+  <rect y="28" width="430" height="75" fill="#FFFCF7"/>
+  <g transform="translate(22 45)"><path d="M20 0l7 8-7 10-7-10z" fill="none" stroke="#9C7941"/><text x="0" y="38" class="serif ink" font-size="19" letter-spacing="4">KIAMORA</text></g>
+  <g fill="none" stroke="#2D231D" stroke-width="1.5"><path d="M337 53h22M337 60h22M337 67h22"/><circle cx="385" cy="59" r="9"/><line x1="392" y1="66" x2="399" y2="73"/></g>
+
+  <g clip-path="url(#mh)"><image x="-646" y="103" width="1188" height="595" xlink:href="assets/hero-celebrates-you.png" preserveAspectRatio="xMidYMid slice"/></g>
+  <rect y="103" width="430" height="595" fill="url(#mShade)"/>
+  <g fill="#FFF9EF">
+    <text x="24" y="472" class="caps" font-size="9">SOME MOMENTS DESERVE TO BE WORN</text>
+    <text x="24" y="516" class="serif" font-size="39">Jewellery that</text><text x="24" y="558" class="serif" font-size="39">celebrates you.</text>
+    <text x="24" y="590" class="sans" font-size="9" letter-spacing="2.2">MEANINGFUL · MODERN · FOREVER</text>
+    <rect x="24" y="618" width="180" height="45" fill="#FFF9EF"/><text x="114" y="646" text-anchor="middle" class="sans ink" font-size="9" letter-spacing="1.6">DISCOVER KIAMORA →</text>
+  </g>
+  <g transform="translate(187 678)"><circle r="4" fill="#FFF9EF"/><circle cx="20" r="3" fill="none" stroke="#FFF9EF"/><circle cx="40" r="3" fill="none" stroke="#FFF9EF"/></g>
+
+  <rect y="698" width="430" height="174" fill="#FFFCF7"/>
+  <text x="215" y="755" text-anchor="middle" class="serif ink" font-size="27">Every piece has a personality.</text>
+  <text x="215" y="792" text-anchor="middle" class="serif muted" font-size="13">We begin with your story, then create</text><text x="215" y="812" text-anchor="middle" class="serif muted" font-size="13">jewellery that makes the moment yours.</text>
+  <text x="215" y="848" text-anchor="middle" class="caps ink" font-size="8">THE KIAMORA IDEA →</text>
+
+  <text x="22" y="907" class="serif ink" font-size="29">Find your perfect piece</text>
+  <g clip-path="url(#mc1)"><image x="-40" y="900" width="420" height="236" xlink:href="assets/signature-collection.png" preserveAspectRatio="xMinYMid slice"/></g>
+  <g clip-path="url(#mc2)"><image x="115" y="900" width="420" height="236" xlink:href="assets/signature-floral-ring.png" preserveAspectRatio="xMidYMid slice"/></g>
+  <g clip-path="url(#mc3)"><image x="-120" y="1120" width="600" height="337" xlink:href="assets/signature-collection.png" preserveAspectRatio="xMidYMid slice"/></g>
+  <g clip-path="url(#mc4)"><image x="40" y="1120" width="650" height="366" xlink:href="assets/signature-collection.png" preserveAspectRatio="xMaxYMid slice"/></g>
+  <g class="serif" font-size="20" fill="#FFF9EF"><text x="32" y="1090">Rings</text><text x="238" y="1090">Bespoke</text><text x="32" y="1314">Earrings</text><text x="238" y="1314">Necklaces</text></g>
+
+  <rect y="1388" width="430" height="500" fill="#E9DFCF"/>
+  <g clip-path="url(#ms)"><image x="-85" y="1448" width="590" height="332" xlink:href="assets/signature-floral-ring.png" preserveAspectRatio="xMidYMid slice"/></g>
+  <text x="22" y="1428" class="caps" font-size="8" fill="#9B743D">THE KIAMORA SIGNATURE</text>
+  <text x="22" y="1818" class="serif ink" font-size="29">Meaning, built into</text><text x="22" y="1850" class="serif ink" font-size="29">every detail.</text>
+  <text x="22" y="1876" class="serif muted" font-size="13">Thoughtful proportions. Responsible brilliance.</text>
+
+  <rect y="1888" width="430" height="420" fill="#FFFCF7"/>
+  <text x="20" y="1930" class="serif ink" font-size="29">Objects of affection</text>
+  <g clip-path="url(#mp1)"><image x="-92" y="1930" width="450" height="253" xlink:href="assets/signature-collection.png" preserveAspectRatio="xMinYMid slice"/></g>
+  <g clip-path="url(#mp2)"><image x="125" y="1930" width="450" height="253" xlink:href="assets/signature-floral-ring.png" preserveAspectRatio="xMidYMid slice"/></g>
+  <text x="18" y="2181" class="serif ink" font-size="16">Promise Solitaire Ring</text><text x="222" y="2181" class="serif ink" font-size="16">Kiamora Bloom Ring</text>
+  <text x="18" y="2204" class="sans muted" font-size="9">Three gold colours</text><text x="222" y="2204" class="sans muted" font-size="9">Bespoke from ₹95,000</text>
+  <rect x="18" y="2245" width="394" height="42" fill="none" stroke="#32251E"/><text x="215" y="2271" text-anchor="middle" class="sans ink" font-size="9" letter-spacing="1.8">VIEW ALL JEWELLERY →</text>
+
+  <rect y="2308" width="430" height="112" fill="#2A1B15"/>
+  <text x="215" y="2347" text-anchor="middle" class="serif" font-size="24" fill="#FFF7EB">The Kiamora assurance</text>
+  <text x="36" y="2380" class="sans" font-size="9" fill="#E9D9C8">◇ Certified diamonds</text><text x="156" y="2380" class="sans" font-size="9" fill="#E9D9C8">◇ Transparent pricing</text><text x="295" y="2380" class="sans" font-size="9" fill="#E9D9C8">◇ Personal guidance</text>
+
+  <g clip-path="url(#ma)"><image x="-300" y="2420" width="730" height="274" xlink:href="assets/hero-promise-moment.png" preserveAspectRatio="xMidYMid slice"/></g>
+  <rect y="2420" width="430" height="270" fill="#1A100B" fill-opacity=".5"/>
+  <g fill="#FFF9EF"><text x="22" y="2480" class="caps" font-size="8">PRIVATE DESIGN CONSULTATION</text><text x="22" y="2527" class="serif" font-size="30">Your story deserves</text><text x="22" y="2563" class="serif" font-size="30">a piece of its own.</text><rect x="22" y="2600" width="192" height="44" fill="#FFF9EF"/><text x="118" y="2627" text-anchor="middle" class="sans ink" font-size="9" letter-spacing="1.5">START ON WHATSAPP →</text></g>
+
+  <rect y="2690" width="430" height="110" fill="#F1E9DE"/>
+  <text x="22" y="2730" class="serif ink" font-size="20" letter-spacing="4">KIAMORA</text><text x="22" y="2755" class="sans muted" font-size="9">Jewellery made personal.</text>
+  <text x="408" y="2732" text-anchor="end" class="sans ink" font-size="10">Instagram · WhatsApp</text><text x="408" y="2755" text-anchor="end" class="sans muted" font-size="8">Privacy · Terms · Contact</text>
+</svg>

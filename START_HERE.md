@@ -16,21 +16,23 @@ This pack is the source of truth for building Kiamora on a clean personal Window
 ## Do this in order
 
 1. Complete every item marked **YOU** in `STEP_0_MANUAL_SETUP.md`.
-2. Send `STEP_0_1_CUSTOMER_INFORMATION_REQUEST.md` to the business/customer.
-3. Create and clone the empty GitHub repository.
-4. Extract this pack into the repository root. `CLAUDE.md` must be at the root.
-5. Copy `.env.example` to `.env` and fill only the public Supabase values after the project exists.
-6. Commit the seed pack before Claude changes anything.
-7. Open the repository in VS Code.
-8. Run `claude` from the repository root.
-9. Paste `PROMPTS/00_FIRST_SESSION.md`.
-10. Continue with the numbered prompts only after reviewing the prior phase.
+2. Configure and verify personal GLM access using `GLM_5_3_FLASH_SETUP.md`.
+3. Send `STEP_0_1_CUSTOMER_INFORMATION_REQUEST.md` to the business/customer.
+4. Create and clone the empty GitHub repository.
+5. Extract this pack into the repository root. `CLAUDE.md` must be at the root.
+6. Copy `.env.example` to `.env` and fill only the public Supabase values after the project exists.
+7. Commit the seed pack before Claude changes anything.
+8. Open the repository in VS Code.
+9. Run `claude` from the repository root and confirm `/status` still shows the personal Z.AI endpoint.
+10. Paste `PROMPTS/00_FIRST_SESSION.md`.
+11. Continue with the numbered prompts only after reviewing the prior phase.
 
 ## Important division of work
 
 ### YOU perform manually
 
 - Create accounts and enable two-factor authentication.
+- Configure the personal Z.AI Coding Plan credential outside the repository.
 - Save recovery codes and passwords.
 - Create the GitHub repository.
 - Create the Supabase organisation/project and first admin identity.
