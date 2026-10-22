@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 180" role="img" aria-labelledby="title desc">
+  <title id="title">Kiamora</title>
+  <desc id="desc">Kiamora — Yours By Design</desc>
+  <g fill="none" stroke="#2a1d17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M215 12 226 30 215 47 204 30Z"/>
+    <path d="M215 47c-8-4-16-12-18-24 10 1 17 6 18 14m0 10c8-4 16-12 18-24-10 1-17 6-18 14"/>
+    <path d="M197 37c-7-1-14-5-19-12 10-2 18 1 23 8m32 4c7-1 14-5 19-12-10-2-18 1-23 8"/>
+  </g>
+  <text x="215" y="108" text-anchor="middle" fill="#261a15" font-family="Georgia, 'Times New Roman', serif" font-size="50" letter-spacing="10">KIAMORA</text>
+  <line x1="82" y1="132" x2="154" y2="132" stroke="#a87a47" stroke-width="1"/>
+  <line x1="276" y1="132" x2="348" y2="132" stroke="#a87a47" stroke-width="1"/>
+  <text x="215" y="137" text-anchor="middle" fill="#6c5549" font-family="Arial, sans-serif" font-size="10" letter-spacing="3.6">YOURS BY DESIGN</text>
+</svg>

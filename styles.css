@@ -1,0 +1,217 @@
+:root {
+  --ivory: #f7f1e8;
+  --espresso: #261a15;
+  --muted: #68554b;
+  --gold: #a87a47;
+  --line: rgba(67, 44, 32, 0.28);
+}
+
+* { box-sizing: border-box; }
+
+html, body { min-height: 100%; }
+
+body {
+  margin: 0;
+  color: var(--espresso);
+  background: var(--ivory);
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.launch {
+  min-height: 100svh;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  isolation: isolate;
+}
+
+.image-panel {
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+  background: url("assets/kiamora-bracelet-hero.png") center / cover no-repeat;
+  transform: scale(1.015);
+  animation: reveal-image 1.6s cubic-bezier(.2,.7,.25,1) both;
+}
+
+.veil {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background:
+    linear-gradient(90deg, rgba(247,241,232,.98) 0%, rgba(247,241,232,.92) 31%, rgba(247,241,232,.48) 53%, rgba(247,241,232,.03) 76%),
+    linear-gradient(0deg, rgba(246,238,226,.42), transparent 35%);
+}
+
+.content {
+  width: min(1420px, calc(100% - 9vw));
+  min-height: 100svh;
+  margin: 0 auto;
+  padding: clamp(28px, 4.5vh, 58px) 0 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.brand {
+  width: clamp(250px, 24vw, 385px);
+  height: auto;
+  display: block;
+  opacity: 0;
+  animation: rise .9s .15s ease-out forwards;
+}
+
+.copy {
+  width: min(610px, 48vw);
+  margin: auto 0;
+  padding: 4vh 0 7vh;
+}
+
+.eyebrow,
+.coming-soon,
+footer {
+  letter-spacing: .28em;
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  margin: 0 0 22px;
+  color: var(--gold);
+  font-size: clamp(.64rem, .8vw, .76rem);
+  font-weight: 600;
+  opacity: 0;
+  animation: rise .9s .32s ease-out forwards;
+}
+
+h1 {
+  margin: 0;
+  max-width: 620px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3.2rem, 5.7vw, 6.6rem);
+  font-weight: 400;
+  line-height: .95;
+  letter-spacing: -.035em;
+  text-wrap: balance;
+  opacity: 0;
+  animation: rise 1s .42s ease-out forwards;
+}
+
+.message {
+  margin: 30px 0 0;
+  color: var(--muted);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1rem, 1.45vw, 1.3rem);
+  line-height: 1.65;
+  opacity: 0;
+  animation: rise 1s .55s ease-out forwards;
+}
+
+.rule {
+  width: min(330px, 100%);
+  margin: 32px 0 22px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  opacity: 0;
+  animation: rise .9s .67s ease-out forwards;
+}
+
+.rule span { height: 1px; flex: 1; background: var(--line); }
+.rule i { width: 7px; height: 7px; border: 1px solid var(--gold); transform: rotate(45deg); }
+
+.coming-soon {
+  margin: 0;
+  font-size: clamp(.74rem, 1vw, .9rem);
+  font-weight: 650;
+  opacity: 0;
+  animation: rise .9s .72s ease-out forwards;
+}
+
+.whatsapp {
+  width: fit-content;
+  margin-top: 28px;
+  padding: 13px 21px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--espresso);
+  border: 1px solid rgba(50,33,25,.45);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .17em;
+  font-size: .68rem;
+  font-weight: 650;
+  transition: color .25s ease, background .25s ease, transform .25s ease;
+  opacity: 0;
+  animation: rise .9s .84s ease-out forwards;
+}
+
+.whatsapp svg { width: 17px; height: 17px; fill: currentColor; }
+.whatsapp:hover, .whatsapp:focus-visible { color: var(--ivory); background: var(--espresso); transform: translateY(-2px); }
+.whatsapp:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: rgba(38,26,21,.62);
+  font-size: .58rem;
+  font-weight: 600;
+}
+
+.footer-diamond {
+  width: 5px;
+  height: 5px;
+  border: 1px solid var(--gold);
+  transform: rotate(45deg);
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes reveal-image {
+  from { opacity: 0; transform: scale(1.045); }
+  to { opacity: 1; transform: scale(1.015); }
+}
+
+@media (max-width: 760px) {
+  .launch { min-height: 100svh; }
+
+  .image-panel {
+    background-position: 63% center;
+  }
+
+  .veil {
+    background:
+      linear-gradient(180deg, rgba(247,241,232,.99) 0%, rgba(247,241,232,.92) 30%, rgba(247,241,232,.3) 57%, rgba(247,241,232,.88) 80%, rgba(247,241,232,.98) 100%);
+  }
+
+  .content {
+    width: calc(100% - 40px);
+    min-height: 100svh;
+    padding: 24px 0 20px;
+  }
+
+  .brand { width: min(260px, 70vw); }
+
+  .copy {
+    width: 100%;
+    margin: 9vh 0 auto;
+    padding: 0;
+  }
+
+  h1 { font-size: clamp(3.1rem, 15vw, 5.2rem); max-width: 360px; }
+  .message { max-width: 330px; font-size: 1.05rem; }
+  .eyebrow { max-width: 260px; line-height: 1.6; }
+  footer { margin-top: 38px; justify-content: center; font-size: .5rem; gap: 11px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
